@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+	<h1>Flowers List</h1>
+
+	<div ng-app=""
+		ng-init="flowers = [{type:'Rose',color:'Red'},{type:'Lotus',color:'Blue'},{type:'Tulip',color:'Yellow'},{type:'Lily',color:'Pink'}]">
+		<!-- <h5>{{flowers}}</h5> -->
+
+		<p>List of flowers with colors :</p>
+		<ul>
+			<li ng-repeat="flower in flowers" style="color: {{flower.color}}">
+
+				{{flower.type +":"+ flower.color}}</li>
+
+		</ul>
+		<ul>
+		
+		
+					<li ng-repeat="flower in flowers" style="color: {{flower.color}}">
+
+				{{flower.type }}:{{ flower.color}}</li>
+		</ul>
+		
+	</div>
+</body>
+</html>
